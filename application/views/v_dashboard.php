@@ -35,7 +35,7 @@
                  </a>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-                <a href="<?php echo(base_url('index.php/Undangan/tabel_fun_science/'.$id_fs)) ?>">
+                <a href="<?php echo(base_url('index.php/Undangan/custom_event/'.$id_fs.'/'.'v_tabel_fun_science')) ?>">
                 <div class="card dashboard-cards">
 
                 <img class="card-img-top" src="<?php echo(base_url('assets/images/Fun_Science.png'))?>" alt="Fun Science">
