@@ -210,10 +210,9 @@ class Undangan extends CI_Controller {
         redirect(base_url('index.php/Undangan/'.$function_cont.'/'.$id_event));
     }
      //** FUN SCIENCE **\\
-     public function tabel_fun_science($id_event){
-        $data['content']="v_tabel_fun_science";
-        $data['isi_tabel']=$this->M_Undangan->get_undangan($id_event);
-        $data['isi_tabel_fs']=$this->M_Undangan->get_undangan_khusus($id_event);
+     public function custom_event($id_event, $view){
+        $data['content']="$view";
+        $data['isi_tabel']=$this->M_Undangan->get_undangan_khusus($id_event);
         $this->load->view('v_template', $data);
     }
     public function tambah_peserta_khusus($id_event, $function_cont){
@@ -383,11 +382,6 @@ class Undangan extends CI_Controller {
         $pdf->Output($fileName, 'D');
     }
     //**  END OF FUN SCIENCE **\\
-    public function akuntansi_masjid($id_event){
-        $data['content']="v_akuntansi_masjid";
-        $data['isi_tabel_am']=$this->M_Undangan->get_undangan_khusus($id_event);
-        $this->load->view('v_template', $data);
-    }
     public function undangan_email($id_undangan,$function_cont,$id_event){
         $data = $this->M_Undangan->undangan_email($id_undangan);
         $data_undangan = $this->M_Undangan->data_email($id_event, $id_undangan);
