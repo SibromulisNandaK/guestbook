@@ -41,9 +41,9 @@
                                     
                                     // Test if string contains the word 
                                     if(strpos($mystring, $fs) !== false){?>
-                                    <a href="<?php echo base_url().'index.php/Undangan/tabel_fun_science/'.$dte->id_event?>"class="card-link">Lihat daftar tamu disini</a>
+                                    <a href="<?php echo base_url().'index.php/Undangan/custom_event/'.$dte->id_event.'/v_tabel_fun_science'?>"class="card-link">Lihat daftar tamu disini</a>
                                         <?php } else if(strpos($mystring, $akm) !== false){?>
-                                    <a href="<?php echo base_url().'index.php/Undangan/akuntansi_masjid/'.$dte->id_event?>"class="card-link">Lihat daftar tamu disini</a>
+                                    <a href="<?php echo base_url().'index.php/Undangan/custom_event/'.$dte->id_event.'/v_akuntansi_masjid'?>"class="card-link">Lihat daftar tamu disini</a>
                                 <?php } else {?>
                                 <a href="<?php echo base_url().'index.php/Undangan/index/'.$dte->id_event?>" class="card-link">Lihat daftar tamu disini</a>
                                 <?php } ?>
