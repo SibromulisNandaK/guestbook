@@ -62,7 +62,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php $no=1; foreach($isi_tabel_am as $isi):?>
+                                <?php $no=1; foreach($isi_tabel as $isi):?>
                                 <tr id="<?php echo $isi->id_undangan?>">
 
                                     <td><?php echo $no; $no++;?></td>
